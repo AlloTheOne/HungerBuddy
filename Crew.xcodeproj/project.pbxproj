@@ -36,12 +36,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		590A06CB299100AF006E9B7B /* Views */ = {
+		590A06CB299100AF006E9B7B /* Component */ = {
 			isa = PBXGroup;
 			children = (
 				590A06CC299100BE006E9B7B /* Header.swift */,
 			);
-			path = Views;
+			path = Component;
 			sourceTree = "<group>";
 		};
 		F5EE5E27298FEC8F00C41454 = {
@@ -66,7 +66,7 @@
 				F5EE5E33298FEC8F00C41454 /* CrewApp.swift */,
 				F5EE5E35298FEC8F00C41454 /* ContentView.swift */,
 				590A06C92991009A006E9B7B /* mainPage.swift */,
-				590A06CB299100AF006E9B7B /* Views */,
+				590A06CB299100AF006E9B7B /* Component */,
 				F5EE5E37298FEC9000C41454 /* Assets.xcassets */,
 				F5EE5E39298FEC9000C41454 /* Preview Content */,
 			);
