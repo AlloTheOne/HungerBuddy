@@ -4,7 +4,6 @@
 //
 //  Created by Dina Alhajj Ibrahim on 05/02/2023.
 //
-
 import SwiftUI
 struct OnBoardingStep {
     let image: String
