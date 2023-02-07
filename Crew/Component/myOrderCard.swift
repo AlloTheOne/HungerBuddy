@@ -72,7 +72,8 @@ struct myOrderCard: View {
                 .background(.white)
                 .cornerRadius(10)
                 .shadow(color: Color("shadow"), radius: 25, x: 0, y: 0)
-                .padding()
+                .padding([.trailing, .leading])
+            Spacer()
         }
     }
 }

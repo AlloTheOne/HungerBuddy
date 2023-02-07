@@ -11,36 +11,43 @@ struct mainPage: View {
     var body: some View {
         VStack {
             headerView()
-    
             VStack(alignment: .leading) {
-                
                     Text("My Orders")
                         .font(.title2)
                         .bold()
                         .padding(.leading)
-                
-                    VStack(alignment: .center)  {
                         myOrderCard()
-                    }
+                    
 //                    Divider()
                     Spacer()
-                    Text("Active Orders Near You")
-                        .font(.title2)
-                        .bold()
-                        .padding(.leading)
+//                ZStack{
+//                    Text("Active Orders Near You")
+//                        .font(.title2)
+//                        .bold()
+//                        .padding(.leading)
+//                }
                     ScrollView(.horizontal, showsIndicators: false){
-                        HStack{
-                            ForEach(0..<10) { index in
-                                orderCard()
+                        VStack(alignment: .leading) {
+                        Text("Active Orders Near You")
+                            .font(.title2)
+                            .bold()
+                            .padding(.leading)
+                            HStack{
+                                ForEach(0..<10) { index in
+                                    orderCard()
+                                    
+                                }
                             }
-                          
                         }
-                        .padding([.top,.bottom], 40)
+                        
+//                        .padding([.top,.bottom], 20)
+//                        .frame(height: 300)
                         .padding(.leading)
-                    
+                        .padding(.bottom, 30)
+                        Spacer()
                 }
                 Spacer()
-                
+                Spacer()
             }
             Spacer()
         }
