@@ -10,9 +10,39 @@ import SwiftUI
 struct mainPage: View {
     var body: some View {
         VStack {
-        headerView()
-        
-            
+            headerView()
+    
+            VStack(alignment: .leading) {
+                
+                    Text("My Orders")
+                        .font(.title2)
+                        .bold()
+                        .padding(.leading)
+                
+                    VStack(alignment: .center)  {
+                        myOrderCard()
+                    }
+//                    Divider()
+                    Spacer()
+                    Text("Active Orders Near You")
+                        .font(.title2)
+                        .bold()
+                        .padding(.leading)
+                    ScrollView(.horizontal, showsIndicators: false){
+                        HStack{
+                            ForEach(0..<10) { index in
+                                orderCard()
+                            }
+                          
+                        }
+                        .padding([.top,.bottom], 40)
+                        .padding(.leading)
+                    
+                }
+                Spacer()
+                
+            }
+            Spacer()
         }
     }
 }

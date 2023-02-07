@@ -10,6 +10,9 @@
 		590A06D529918DD7006E9B7B /* headerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D429918DD7006E9B7B /* headerView.swift */; };
 		590A06D7299194DB006E9B7B /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D6299194DB006E9B7B /* mainPage.swift */; };
 		590A06D929919603006E9B7B /* orderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D829919603006E9B7B /* orderCard.swift */; };
+		590A06DB299231E6006E9B7B /* myOrderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06DA299231E6006E9B7B /* myOrderCard.swift */; };
+		590A06DD29924234006E9B7B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06DC29924234006E9B7B /* TabBar.swift */; };
+		590A06DF29924314006E9B7B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06DE29924314006E9B7B /* TabView.swift */; };
 		F5EE5E34298FEC8F00C41454 /* CrewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E33298FEC8F00C41454 /* CrewApp.swift */; };
 		F5EE5E36298FEC8F00C41454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E35298FEC8F00C41454 /* ContentView.swift */; };
 		F5EE5E38298FEC9000C41454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EE5E37298FEC9000C41454 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 		590A06D429918DD7006E9B7B /* headerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerView.swift; sourceTree = "<group>"; };
 		590A06D6299194DB006E9B7B /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
 		590A06D829919603006E9B7B /* orderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderCard.swift; sourceTree = "<group>"; };
+		590A06DA299231E6006E9B7B /* myOrderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrderCard.swift; sourceTree = "<group>"; };
+		590A06DC29924234006E9B7B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		590A06DE29924314006E9B7B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		F5EE5E30298FEC8F00C41454 /* Crew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EE5E33298FEC8F00C41454 /* CrewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewApp.swift; sourceTree = "<group>"; };
 		F5EE5E35298FEC8F00C41454 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +53,7 @@
 			children = (
 				590A06D429918DD7006E9B7B /* headerView.swift */,
 				590A06D829919603006E9B7B /* orderCard.swift */,
+				590A06DA299231E6006E9B7B /* myOrderCard.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -75,6 +82,8 @@
 				F5EE5E35298FEC8F00C41454 /* ContentView.swift */,
 				F5EE5E4E2991060700C41454 /* ViewForm.swift */,
 				590A06D6299194DB006E9B7B /* mainPage.swift */,
+				590A06DC29924234006E9B7B /* TabBar.swift */,
+				590A06DE29924314006E9B7B /* TabView.swift */,
 				590A06CB299100AF006E9B7B /* Component */,
 				F5EE5E37298FEC9000C41454 /* Assets.xcassets */,
 				F5EE5E39298FEC9000C41454 /* Preview Content */,
@@ -168,6 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				590A06DF29924314006E9B7B /* TabView.swift in Sources */,
+				590A06DD29924234006E9B7B /* TabBar.swift in Sources */,
+				590A06DB299231E6006E9B7B /* myOrderCard.swift in Sources */,
 				590A06D529918DD7006E9B7B /* headerView.swift in Sources */,
 				590A06D7299194DB006E9B7B /* mainPage.swift in Sources */,
 				F5EE5E4D299105CD00C41454 /* MainView.swift in Sources */,
