@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		590A06D529918DD7006E9B7B /* headerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D429918DD7006E9B7B /* headerView.swift */; };
-		590A06D7299194DB006E9B7B /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D6299194DB006E9B7B /* mainPage.swift */; };
 		590A06D929919603006E9B7B /* orderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D829919603006E9B7B /* orderCard.swift */; };
 		F5EE5E34298FEC8F00C41454 /* CrewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E33298FEC8F00C41454 /* CrewApp.swift */; };
 		F5EE5E36298FEC8F00C41454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E35298FEC8F00C41454 /* ContentView.swift */; };
@@ -19,11 +18,11 @@
 		F5EE5E582993BA6000C41454 /* SwiftUIView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E572993BA6000C41454 /* SwiftUIView2.swift */; };
 		F5EE5E5C2993DB6B00C41454 /* SwiftUIView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E5B2993DB6B00C41454 /* SwiftUIView5.swift */; };
 		F5EE5E602993E88400C41454 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E5F2993E88400C41454 /* test.swift */; };
+		F5EE5E642993F3A100C41454 /* FORM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E632993F3A100C41454 /* FORM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		590A06D429918DD7006E9B7B /* headerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerView.swift; sourceTree = "<group>"; };
-		590A06D6299194DB006E9B7B /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
 		590A06D829919603006E9B7B /* orderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderCard.swift; sourceTree = "<group>"; };
 		F5EE5E30298FEC8F00C41454 /* Crew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EE5E33298FEC8F00C41454 /* CrewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewApp.swift; sourceTree = "<group>"; };
@@ -35,6 +34,7 @@
 		F5EE5E572993BA6000C41454 /* SwiftUIView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView2.swift; sourceTree = "<group>"; };
 		F5EE5E5B2993DB6B00C41454 /* SwiftUIView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView5.swift; sourceTree = "<group>"; };
 		F5EE5E5F2993E88400C41454 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = test.swift; path = ../../.Trash/test.swift; sourceTree = "<group>"; };
+		F5EE5E632993F3A100C41454 /* FORM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FORM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 				F5EE5E35298FEC8F00C41454 /* ContentView.swift */,
 				F5EE5E4C299105CD00C41454 /* MainView.swift */,
 				F5EE5E4E2991060700C41454 /* ViewForm.swift */,
-				590A06D6299194DB006E9B7B /* mainPage.swift */,
+				F5EE5E632993F3A100C41454 /* FORM.swift */,
 				F5EE5E572993BA6000C41454 /* SwiftUIView2.swift */,
 				F5EE5E5B2993DB6B00C41454 /* SwiftUIView5.swift */,
 				590A06CB299100AF006E9B7B /* Component */,
@@ -178,7 +178,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				590A06D529918DD7006E9B7B /* headerView.swift in Sources */,
-				590A06D7299194DB006E9B7B /* mainPage.swift in Sources */,
 				F5EE5E4D299105CD00C41454 /* MainView.swift in Sources */,
 				F5EE5E602993E88400C41454 /* test.swift in Sources */,
 				F5EE5E36298FEC8F00C41454 /* ContentView.swift in Sources */,
@@ -187,6 +186,7 @@
 				F5EE5E34298FEC8F00C41454 /* CrewApp.swift in Sources */,
 				F5EE5E4F2991060700C41454 /* ViewForm.swift in Sources */,
 				F5EE5E5C2993DB6B00C41454 /* SwiftUIView5.swift in Sources */,
+				F5EE5E642993F3A100C41454 /* FORM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ import SwiftUI
 struct CrewApp: App {
     var body: some Scene {
         WindowGroup {
-            mainPage()
+            FORM()
         }
     }
 }
