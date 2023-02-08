@@ -23,12 +23,12 @@ struct headerView: View {
                         .bold()
                 }
             }
-            .frame(height: 110)
+            .frame(height: 80)
             .foregroundColor(.white)
             .padding()
             .background(Color("darkgrey"))
             .ignoresSafeArea()
-            Spacer()
+//            Spacer()
         }
         
     }

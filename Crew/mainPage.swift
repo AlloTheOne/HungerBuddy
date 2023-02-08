@@ -10,82 +10,53 @@ import SwiftUI
 struct mainPage: View {
     @State var cityName: String = ""
     var body: some View {
-        VStack(spacing: 0){
-            VStack {
-                HStack { Spacer() }
-                Spacer()
-                HStack {
-                    Text("New Order")
-                    
-                        .font(.title)
+        VStack {
+            headerView()
+            VStack(alignment: .leading) {
+                    Text("My Orders")
+                        .font(.title2)
                         .bold()
-                   // Spacer()
+                        .padding(.leading)
+                        myOrderCard()
                     
+//                    Divider()
+                    Spacer()
+//                ZStack{
+//                    Text("Active Orders Near You")
+//                        .font(.title2)
+//                        .bold()
+//                        .padding(.leading)
+//                }
+                    ScrollView(.horizontal, showsIndicators: false){
+                        VStack(alignment: .leading) {
+                        Text("Active Orders Near You")
+                            .font(.title2)
+                            .bold()
+                            .padding(.leading)
+                            HStack{
+                                ForEach(0..<10) { index in
+                                    orderCard()
+                                    
+                                }
+                            }
+                        }
+                        
+//                        .padding([.top,.bottom], 20)
+//                        .frame(height: 300)
+                        .padding(.leading)
+                        .padding(.bottom, 30)
+                        Spacer()
                 }
-            }
-            .frame(height: 50)
-            .foregroundColor(.white)
-            .padding()
-            .background(Color("darkgrey"))
-       // .ignoresSafeArea()
-            
-         
-                TextField("", text: $cityName, prompt: Text("Restaurant Name"))
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 15)
-                          .stroke(.gray))
-                    .frame(height: 50)
-                    .padding()
-                ViewForm()
-                .padding()
-           // Spacer()
-               // .padding()
-            
-            TextField("", text: $cityName, prompt: Text("Delivery Fee"))
-                .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 15)
-                      .stroke(.gray))
-                .frame(height: 50)
-                .padding()
-            SwiftUIView5()
-            .padding()
-            //Spacer()
-            TextField("", text: $cityName, prompt: Text("Add Notes and comments"))
-                .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 15)
-                      .stroke(.gray))
-                .frame(height: 50)
-                .padding()
-            Spacer()
-            Button {
-
-            } label: {
-                Text("Send")
-                    .bold()
-                    .foregroundColor(.white)
-                    .frame(width: 250, height: 250)
-                    .frame(height: 40)
-                    .background(Color("ouryellow"))
-                    .cornerRadius(10)
-                    
+                Spacer()
+                Spacer()
             }
             Spacer()
-                .padding()
-                }
-        
-              }
-    
-        }
-
-    
-    
-    
-    struct mainPage_Previews: PreviewProvider {
-        static var previews: some View {
-            mainPage()
         }
     }
+}
 
+struct mainPage_Previews: PreviewProvider {
+    static var previews: some View {
+        mainPage()
+    }
+}

@@ -1,13 +1,13 @@
 //
-//  orderCard.swift
+//  myOrderCard.swift
 //  Crew
 //
-//  Created by Alaa Alabdullah on 06/02/2023.
+//  Created by Alaa Alabdullah on 07/02/2023.
 //
 
 import SwiftUI
 
-struct orderCard: View {
+struct myOrderCard: View {
     var body: some View {
         VStack {
             VStack{
@@ -37,8 +37,8 @@ struct orderCard: View {
                     Text("STC Pay, Alrajhi")
                         .font(.caption)
                     Spacer()
-                    Image(systemName: "location")
-                    Text("6.2")
+                    Image(systemName: "person.3.sequence")
+                    Text("3-4")
                         .font(.caption)
                     
                 }
@@ -48,39 +48,38 @@ struct orderCard: View {
                     Text("Jahez")
                         .font(.caption)
                     Spacer()
-                    Image(systemName: "person.3.sequence")
-                    Text("3-4")
-                        .font(.caption)
+                    Button {
+                        
+                    } label: {
+                        Text("Join")
+                            .bold()
+                            .foregroundColor(.white)
+                            .frame(maxWidth: 200)
+                            .frame(height: 40)
+                            .background(Color("ouryellow"))
+                            .cornerRadius(10)
+                        
+                    }
                     
                 }
-                .padding(.bottom)
+//                .padding(.bottom)
                 
-                Button {
-                    
-                } label: {
-                    Text("Join")
-                        .bold()
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 40)
-                        .background(Color("ouryellow"))
-                        .cornerRadius(10)
-                    
-                }
+               
 
             }
                 .padding()
-                .frame(width: 250, height: 215)
+                .frame(width: 360, height: 150)
                 .background(.white)
                 .cornerRadius(10)
                 .shadow(color: Color("shadow"), radius: 25, x: 0, y: 0)
-                .padding(5)
+                .padding([.trailing, .leading])
+            Spacer()
         }
     }
 }
 
-struct orderCard_Previews: PreviewProvider {
+struct myOrderCard_Previews: PreviewProvider {
     static var previews: some View {
-        orderCard()
+        myOrderCard()
     }
 }
