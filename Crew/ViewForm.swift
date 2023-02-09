@@ -9,28 +9,24 @@ import SwiftUI
 struct ViewForm: View {
     @State var cityName: String = ""
     var body: some View {
-        VStack(alignment: .leading) {
-                    Text("What App Are You Ordering From?")
-                        .font(.headline)
-            TextField("", text: $cityName, prompt: Text("App Name"))
-              .padding()
-              .background(
-                RoundedRectangle(cornerRadius: 15)
-                  .stroke(.gray)
-              )
-              .frame(height: 50)
-
-                }
-
-        
+        VStack {
+            Text("New Order")
+                .foregroundColor(.white)
+                .font(.title3)
+                .bold()
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(Color.black.ignoresSafeArea(edges: .top))
+                .frame(maxWidth: .infinity)
+            Spacer()
             
         }
+       
     }
-
     
     struct ViewForm_Previews: PreviewProvider {
         static var previews: some View {
             ViewForm()
         }
     }
-
+}

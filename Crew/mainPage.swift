@@ -2,13 +2,12 @@
 //  mainPage.swift
 //  Crew
 //
-//  Created by Dina Alhajj Ibrahim on 06/02/2023.
+//  Created by Alaa Alabdullah on 06/02/2023.
 //
 
 import SwiftUI
 
 struct mainPage: View {
-    @State var cityName: String = ""
     var body: some View {
         VStack {
             headerView()
