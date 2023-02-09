@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23817ADA2994D99E001B54D6 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23817AD92994D99E001B54D6 /* OrderHistory.swift */; };
 		590A06D529918DD7006E9B7B /* headerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D429918DD7006E9B7B /* headerView.swift */; };
 		590A06D7299194DB006E9B7B /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D6299194DB006E9B7B /* mainPage.swift */; };
 		590A06D929919603006E9B7B /* orderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D829919603006E9B7B /* orderCard.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23817AD92994D99E001B54D6 /* OrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
 		590A06D429918DD7006E9B7B /* headerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerView.swift; sourceTree = "<group>"; };
 		590A06D6299194DB006E9B7B /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
 		590A06D829919603006E9B7B /* orderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderCard.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				590A06D6299194DB006E9B7B /* mainPage.swift */,
 				590A06DC29924234006E9B7B /* TabBar.swift */,
 				590A06DE29924314006E9B7B /* TabView.swift */,
+				23817AD92994D99E001B54D6 /* OrderHistory.swift */,
 				590A06CB299100AF006E9B7B /* Component */,
 				F5EE5E37298FEC9000C41454 /* Assets.xcassets */,
 				F5EE5E39298FEC9000C41454 /* Preview Content */,
@@ -194,6 +197,7 @@
 				590A06DB299231E6006E9B7B /* myOrderCard.swift in Sources */,
 				590A06D529918DD7006E9B7B /* headerView.swift in Sources */,
 				F5EE5E722994CD2D00C41454 /* SwiftUIView5.swift in Sources */,
+				23817ADA2994D99E001B54D6 /* OrderHistory.swift in Sources */,
 				590A06D7299194DB006E9B7B /* mainPage.swift in Sources */,
 				F5EE5E4D299105CD00C41454 /* MainView.swift in Sources */,
 				F5EE5E36298FEC8F00C41454 /* ContentView.swift in Sources */,
