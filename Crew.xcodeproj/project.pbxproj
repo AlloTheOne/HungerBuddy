@@ -19,7 +19,10 @@
 		F5EE5E3B298FEC9000C41454 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EE5E3A298FEC9000C41454 /* Preview Assets.xcassets */; };
 		F5EE5E4D299105CD00C41454 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E4C299105CD00C41454 /* MainView.swift */; };
 		F5EE5E4F2991060700C41454 /* ViewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E4E2991060700C41454 /* ViewForm.swift */; };
-		F5EE5E522992246700C41454 /* viewform2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E512992246700C41454 /* viewform2.swift */; };
+		F5EE5E6E2994CD0500C41454 /* FORM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E6D2994CD0500C41454 /* FORM.swift */; };
+		F5EE5E702994CD1D00C41454 /* SWIFTUIVIEW2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E6F2994CD1D00C41454 /* SWIFTUIVIEW2.swift */; };
+		F5EE5E722994CD2D00C41454 /* SwiftUIView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E712994CD2D00C41454 /* SwiftUIView5.swift */; };
+		F5EE5E742994D12800C41454 /* checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E732994D12800C41454 /* checkbox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +39,10 @@
 		F5EE5E3A298FEC9000C41454 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5EE5E4C299105CD00C41454 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F5EE5E4E2991060700C41454 /* ViewForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewForm.swift; sourceTree = "<group>"; };
-		F5EE5E512992246700C41454 /* viewform2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewform2.swift; sourceTree = "<group>"; };
+		F5EE5E6D2994CD0500C41454 /* FORM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FORM.swift; sourceTree = "<group>"; };
+		F5EE5E6F2994CD1D00C41454 /* SWIFTUIVIEW2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTUIVIEW2.swift; sourceTree = "<group>"; };
+		F5EE5E712994CD2D00C41454 /* SwiftUIView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView5.swift; sourceTree = "<group>"; };
+		F5EE5E732994D12800C41454 /* checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkbox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +89,11 @@
 				F5EE5E33298FEC8F00C41454 /* CrewApp.swift */,
 				F5EE5E35298FEC8F00C41454 /* ContentView.swift */,
 				F5EE5E4C299105CD00C41454 /* MainView.swift */,
-				590A06C92991009A006E9B7B /* mainPage.swift */,
 				F5EE5E4E2991060700C41454 /* ViewForm.swift */,
+				F5EE5E6D2994CD0500C41454 /* FORM.swift */,
+				F5EE5E6F2994CD1D00C41454 /* SWIFTUIVIEW2.swift */,
+				F5EE5E712994CD2D00C41454 /* SwiftUIView5.swift */,
+				F5EE5E732994D12800C41454 /* checkbox.swift */,
 				590A06D6299194DB006E9B7B /* mainPage.swift */,
 				590A06DC29924234006E9B7B /* TabBar.swift */,
 				590A06DE29924314006E9B7B /* TabView.swift */,
@@ -184,12 +193,16 @@
 				590A06DD29924234006E9B7B /* TabBar.swift in Sources */,
 				590A06DB299231E6006E9B7B /* myOrderCard.swift in Sources */,
 				590A06D529918DD7006E9B7B /* headerView.swift in Sources */,
+				F5EE5E722994CD2D00C41454 /* SwiftUIView5.swift in Sources */,
 				590A06D7299194DB006E9B7B /* mainPage.swift in Sources */,
 				F5EE5E4D299105CD00C41454 /* MainView.swift in Sources */,
 				F5EE5E36298FEC8F00C41454 /* ContentView.swift in Sources */,
 				590A06D929919603006E9B7B /* orderCard.swift in Sources */,
 				F5EE5E34298FEC8F00C41454 /* CrewApp.swift in Sources */,
+				F5EE5E702994CD1D00C41454 /* SWIFTUIVIEW2.swift in Sources */,
 				F5EE5E4F2991060700C41454 /* ViewForm.swift in Sources */,
+				F5EE5E742994D12800C41454 /* checkbox.swift in Sources */,
+				F5EE5E6E2994CD0500C41454 /* FORM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
