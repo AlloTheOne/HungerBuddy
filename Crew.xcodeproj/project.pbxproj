@@ -24,6 +24,10 @@
 		F5EE5E702994CD1D00C41454 /* SWIFTUIVIEW2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E6F2994CD1D00C41454 /* SWIFTUIVIEW2.swift */; };
 		F5EE5E722994CD2D00C41454 /* SwiftUIView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E712994CD2D00C41454 /* SwiftUIView5.swift */; };
 		F5EE5E742994D12800C41454 /* checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E732994D12800C41454 /* checkbox.swift */; };
+		F5EE5E76299FBCF700C41454 /* location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E75299FBCF700C41454 /* location.swift */; };
+		F5EE5E79299FC4E000C41454 /* contentview5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E78299FC4E000C41454 /* contentview5.swift */; };
+		F5EE5E7D29A2016F00C41454 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E7C29A2016F00C41454 /* login.swift */; };
+		F5EE5E7F29A204B300C41454 /* register page.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E7E29A204B300C41454 /* register page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,11 @@
 		F5EE5E6F2994CD1D00C41454 /* SWIFTUIVIEW2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWIFTUIVIEW2.swift; sourceTree = "<group>"; };
 		F5EE5E712994CD2D00C41454 /* SwiftUIView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView5.swift; sourceTree = "<group>"; };
 		F5EE5E732994D12800C41454 /* checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkbox.swift; sourceTree = "<group>"; };
+		F5EE5E75299FBCF700C41454 /* location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = location.swift; sourceTree = "<group>"; };
+		F5EE5E77299FBE4900C41454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F5EE5E78299FC4E000C41454 /* contentview5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentview5.swift; sourceTree = "<group>"; };
+		F5EE5E7C29A2016F00C41454 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		F5EE5E7E29A204B300C41454 /* register page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "register page.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +97,12 @@
 		F5EE5E32298FEC8F00C41454 /* Crew */ = {
 			isa = PBXGroup;
 			children = (
+				F5EE5E77299FBE4900C41454 /* Info.plist */,
 				F5EE5E33298FEC8F00C41454 /* CrewApp.swift */,
+				F5EE5E75299FBCF700C41454 /* location.swift */,
+				F5EE5E78299FC4E000C41454 /* contentview5.swift */,
+				F5EE5E7C29A2016F00C41454 /* login.swift */,
+				F5EE5E7E29A204B300C41454 /* register page.swift */,
 				F5EE5E35298FEC8F00C41454 /* ContentView.swift */,
 				F5EE5E4C299105CD00C41454 /* MainView.swift */,
 				F5EE5E4E2991060700C41454 /* ViewForm.swift */,
@@ -192,17 +206,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5EE5E79299FC4E000C41454 /* contentview5.swift in Sources */,
 				590A06DF29924314006E9B7B /* TabView.swift in Sources */,
 				590A06DD29924234006E9B7B /* TabBar.swift in Sources */,
+				F5EE5E76299FBCF700C41454 /* location.swift in Sources */,
 				590A06DB299231E6006E9B7B /* myOrderCard.swift in Sources */,
 				590A06D529918DD7006E9B7B /* headerView.swift in Sources */,
 				F5EE5E722994CD2D00C41454 /* SwiftUIView5.swift in Sources */,
 				23817ADA2994D99E001B54D6 /* OrderHistory.swift in Sources */,
 				590A06D7299194DB006E9B7B /* mainPage.swift in Sources */,
+				F5EE5E7F29A204B300C41454 /* register page.swift in Sources */,
 				F5EE5E4D299105CD00C41454 /* MainView.swift in Sources */,
 				F5EE5E36298FEC8F00C41454 /* ContentView.swift in Sources */,
 				590A06D929919603006E9B7B /* orderCard.swift in Sources */,
 				F5EE5E34298FEC8F00C41454 /* CrewApp.swift in Sources */,
+				F5EE5E7D29A2016F00C41454 /* login.swift in Sources */,
 				F5EE5E702994CD1D00C41454 /* SWIFTUIVIEW2.swift in Sources */,
 				F5EE5E4F2991060700C41454 /* ViewForm.swift in Sources */,
 				F5EE5E742994D12800C41454 /* checkbox.swift in Sources */,
@@ -337,6 +355,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Crew/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Crew/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs to access your location data to tell you your location ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -366,6 +386,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Crew/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Crew/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs to access your location data to tell you your location ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
