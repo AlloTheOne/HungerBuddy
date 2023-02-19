@@ -14,16 +14,15 @@ struct  ContentView: View {
         @State private var opacity = 0.5
         
         @AppStorage("isUserOnboarded") var isUserOnboarded: Bool = false
-        
+    @EnvironmentObject var userAuth: UserAuth
         var body: some View {
             
             if isActive {
                 if !isUserOnboarded {
                     MainView()
                 } else {
-    //                AddingEvents()
-                    MainView()            }
-            } else {
+                    MainView()
+                }
 
                     
                     Image("logo")

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>274519606785-tkcd4bpfeml1lsc71kidnsm6plgn6mj0.apps.googleusercontent.com</string>
+	<string>274519606785-d5enioma2g4h9i87c04bj4hbk1grslde.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.274519606785-tkcd4bpfeml1lsc71kidnsm6plgn6mj0</string>
+	<string>com.googleusercontent.apps.274519606785-d5enioma2g4h9i87c04bj4hbk1grslde</string>
 	<key>API_KEY</key>
 	<string>AIzaSyByVB6ByS4FbH4CWJxEghfDzD67Hk2iB7c</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>dinakhaled1999-outlook.com.Crew</string>
+	<string>com.Alaa.HungerBuddy</string>
 	<key>PROJECT_ID</key>
 	<string>hungerbuddy-b904d</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:274519606785:ios:ea949a81f115803b0ae200</string>
+	<string>1:274519606785:ios:eaf95eb9da11c73b0ae200</string>
 </dict>
 </plist>

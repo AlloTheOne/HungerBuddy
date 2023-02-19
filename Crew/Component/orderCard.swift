@@ -59,11 +59,13 @@ struct orderCard: View {
                     
                     
                     NavigationLink {
-                        if !userAuth.isLoggedin {
-                                        MainView()
-                                    } else {
-                                        mainPage()
-                                    }
+//                        if !userAuth.isLoggedin {
+//                        MainView()
+//                    } else {
+//                        mainPage()
+//                    }
+//                        
+                    
                     } label: {
                         Text("Join")
                             .bold()
