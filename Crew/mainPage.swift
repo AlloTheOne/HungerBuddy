@@ -8,30 +8,27 @@
 import SwiftUI
 
 struct mainPage: View {
+    @State private var isPresentedFullScreenCover = false
     var body: some View {
-        VStack {
-            headerView()
-            VStack(alignment: .leading) {
+        NavigationView {
+            VStack {
+                headerView()
+                VStack(alignment: .leading) {
                     Text("My Orders")
                         .font(.title2)
                         .bold()
                         .padding(.leading)
-                        myOrderCard()
+                    emptyOrderCard
                     
-//                    Divider()
+
                     Spacer()
-//                ZStack{
-//                    Text("Active Orders Near You")
-//                        .font(.title2)
-//                        .bold()
-//                        .padding(.leading)
-//                }
+
                     ScrollView(.horizontal, showsIndicators: false){
                         VStack(alignment: .leading) {
-                        Text("Active Orders Near You")
-                            .font(.title2)
-                            .bold()
-                            .padding(.leading)
+                            Text("Active Orders Near You")
+                                .font(.title2)
+                                .bold()
+                                .padding(.leading)
                             HStack{
                                 ForEach(0..<10) { index in
                                     orderCard()
@@ -40,16 +37,56 @@ struct mainPage: View {
                             }
                         }
                         
-//                        .padding([.top,.bottom], 20)
-//                        .frame(height: 300)
+
                         .padding(.leading)
                         .padding(.bottom, 30)
                         Spacer()
+                    }
+                    Spacer()
+                    Spacer()
                 }
                 Spacer()
-                Spacer()
             }
-            Spacer()
+        }
+    }
+    var emptyOrderCard : some View {
+        VStack {
+          
+                VStack{
+                    HStack{
+
+//                        }
+                        Text("You Have No Order Yet")
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
+                            .bold()
+                            .padding(.horizontal, 50.0)
+                        
+                        
+                    }
+                    
+                 
+                    
+             NavigationLink(destination: FORM()) {
+                    Text("Create Your Order")
+                        .bold()
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 40)
+                        .background(Color("ouryellow"))
+                        .cornerRadius(10)
+                        .padding(.horizontal)
+                    }.navigationBarBackButtonHidden(true)
+                    
+                }
+                //.padding()
+                .frame(width: UIScreen.main.bounds.width - 20, height: 200)
+                .background(.white)
+                .cornerRadius(10)
+                .shadow(color: Color("shadow"), radius: 25, x: 0, y: 0)
+                .padding(12)
+              //  .padding(5)
+            
         }
     }
 }
