@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		23817ADA2994D99E001B54D6 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23817AD92994D99E001B54D6 /* OrderHistory.swift */; };
+		23BC416929A4CD8C0075F0C8 /* formH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC416829A4CD8C0075F0C8 /* formH.swift */; };
+		23BC416B29A4CE280075F0C8 /* TotallyNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC416A29A4CE280075F0C8 /* TotallyNewView.swift */; };
+		23BC416D29A4CEDD0075F0C8 /* pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BC416C29A4CEDD0075F0C8 /* pass.swift */; };
 		590A06D529918DD7006E9B7B /* headerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D429918DD7006E9B7B /* headerView.swift */; };
 		590A06D7299194DB006E9B7B /* mainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D6299194DB006E9B7B /* mainPage.swift */; };
 		590A06D929919603006E9B7B /* orderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A06D829919603006E9B7B /* orderCard.swift */; };
@@ -43,6 +46,9 @@
 
 /* Begin PBXFileReference section */
 		23817AD92994D99E001B54D6 /* OrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
+		23BC416829A4CD8C0075F0C8 /* formH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formH.swift; sourceTree = "<group>"; };
+		23BC416A29A4CE280075F0C8 /* TotallyNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotallyNewView.swift; sourceTree = "<group>"; };
+		23BC416C29A4CEDD0075F0C8 /* pass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pass.swift; sourceTree = "<group>"; };
 		590A06D429918DD7006E9B7B /* headerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerView.swift; sourceTree = "<group>"; };
 		590A06D6299194DB006E9B7B /* mainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainPage.swift; sourceTree = "<group>"; };
 		590A06D829919603006E9B7B /* orderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderCard.swift; sourceTree = "<group>"; };
@@ -89,6 +95,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23BC416E29A4CF420075F0C8 /* ForOrderHistory */ = {
+			isa = PBXGroup;
+			children = (
+				23BC416829A4CD8C0075F0C8 /* formH.swift */,
+				23BC416C29A4CEDD0075F0C8 /* pass.swift */,
+				23BC416A29A4CE280075F0C8 /* TotallyNewView.swift */,
+			);
+			path = ForOrderHistory;
+			sourceTree = "<group>";
+		};
 		590A06CB299100AF006E9B7B /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +155,7 @@
 				23817AD92994D99E001B54D6 /* OrderHistory.swift */,
 				590A0798299E21B8006E9B7B /* UserAuth.swift */,
 				590A079A299E2A53006E9B7B /* loginView.swift */,
+				23BC416E29A4CF420075F0C8 /* ForOrderHistory */,
 				590A06CB299100AF006E9B7B /* Component */,
 				F5EE5E37298FEC9000C41454 /* Assets.xcassets */,
 				590A079C299F7559006E9B7B /* GoogleService-Info.plist */,
@@ -251,10 +268,12 @@
 				590A06DF29924314006E9B7B /* TabView.swift in Sources */,
 				590A06DD29924234006E9B7B /* TabBar.swift in Sources */,
 				F5EE5E76299FBCF700C41454 /* location.swift in Sources */,
+				23BC416B29A4CE280075F0C8 /* TotallyNewView.swift in Sources */,
 				590A06DB299231E6006E9B7B /* myOrderCard.swift in Sources */,
 				590A06D529918DD7006E9B7B /* headerView.swift in Sources */,
 				F5EE5E722994CD2D00C41454 /* SwiftUIView5.swift in Sources */,
 				23817ADA2994D99E001B54D6 /* OrderHistory.swift in Sources */,
+				23BC416D29A4CEDD0075F0C8 /* pass.swift in Sources */,
 				590A06D7299194DB006E9B7B /* mainPage.swift in Sources */,
 				F5EE5E7F29A204B300C41454 /* register page.swift in Sources */,
 				F5EE5E4D299105CD00C41454 /* MainView.swift in Sources */,
@@ -262,6 +281,7 @@
 				590A079B299E2A53006E9B7B /* loginView.swift in Sources */,
 				590A06D929919603006E9B7B /* orderCard.swift in Sources */,
 				590A0799299E21B8006E9B7B /* UserAuth.swift in Sources */,
+				23BC416929A4CD8C0075F0C8 /* formH.swift in Sources */,
 				F5EE5E34298FEC8F00C41454 /* CrewApp.swift in Sources */,
 				F5EE5E7D29A2016F00C41454 /* login.swift in Sources */,
 				F5EE5E702994CD1D00C41454 /* SWIFTUIVIEW2.swift in Sources */,
