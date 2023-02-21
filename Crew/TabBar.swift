@@ -14,16 +14,16 @@ struct TabBar: View {
             
             mainPage()
                 .tabItem {
-                    Label("Habits", systemImage: "leaf")
+                    Label("Active Orders", systemImage: "leaf")
                 }
             
             mainPage()
                 .tabItem {
-                    Label("Community", systemImage: "rectangle.3.group.bubble.left")
+                    Label("Chat", systemImage: "rectangle.3.group.bubble.left")
                 }
             ViewForm()
                 .tabItem {
-                    Label("Profile", systemImage: "person")
+                    Label("Order History", systemImage: "Symbol")
                 }
         }
         .accentColor(Color("ouryellow"))

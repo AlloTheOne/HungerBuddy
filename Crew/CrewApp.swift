@@ -7,16 +7,24 @@
 
 import SwiftUI
 import Firebase
+import StreamChat
+import StreamChatSwiftUI
+
 
 @main
 struct CrewApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    
     init() {
         FirebaseApp.configure()
     }
     var body: some Scene {
         WindowGroup {
-            mainPage()
-                .environmentObject(UserAuth())
+            ChatChannelListView()
+
+                //.environmentObject(UserAuth())
         }
     }
 }

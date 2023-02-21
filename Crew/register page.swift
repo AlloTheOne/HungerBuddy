@@ -30,6 +30,12 @@ struct RegisterView: View {
                 .cornerRadius(5)
                 .padding(.bottom, 20)
             
+            TextField("Last Name", text: $name)
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(5)
+                .padding(.bottom, 20)
+            
             TextField("Email", text: $email)
                 .padding()
                 .background(Color.gray.opacity(0.2))
@@ -42,11 +48,11 @@ struct RegisterView: View {
                 .cornerRadius(5)
                 .padding(.bottom, 20)
             
-            SecureField("Confirm Password", text: $confirmPassword)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(5)
-                .padding(.bottom, 20)
+//            SecureField("Confirm Password", text: $confirmPassword)
+//                .padding()
+//                .background(Color.gray.opacity(0.2))
+//                .cornerRadius(5)
+//                .padding(.bottom, 20)
             
             Button(action: {
                 // Handle the register action here.

@@ -23,6 +23,8 @@
 		590A0799299E21B8006E9B7B /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A0798299E21B8006E9B7B /* UserAuth.swift */; };
 		590A079B299E2A53006E9B7B /* loginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A079A299E2A53006E9B7B /* loginView.swift */; };
 		590A079D299F755A006E9B7B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 590A079C299F7559006E9B7B /* GoogleService-Info.plist */; };
+		F5D0354529A38EAC005EE35D /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F5D0354429A38EAC005EE35D /* StreamChatSwiftUI */; };
+		F5D0354729A39343005EE35D /* appchat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D0354629A39343005EE35D /* appchat.swift */; };
 		F5EE5E34298FEC8F00C41454 /* CrewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E33298FEC8F00C41454 /* CrewApp.swift */; };
 		F5EE5E36298FEC8F00C41454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE5E35298FEC8F00C41454 /* ContentView.swift */; };
 		F5EE5E38298FEC9000C41454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EE5E37298FEC9000C41454 /* Assets.xcassets */; };
@@ -51,6 +53,7 @@
 		590A0798299E21B8006E9B7B /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
 		590A079A299E2A53006E9B7B /* loginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginView.swift; sourceTree = "<group>"; };
 		590A079C299F7559006E9B7B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5D0354629A39343005EE35D /* appchat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appchat.swift; sourceTree = "<group>"; };
 		F5EE5E30298FEC8F00C41454 /* Crew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EE5E33298FEC8F00C41454 /* CrewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrewApp.swift; sourceTree = "<group>"; };
 		F5EE5E35298FEC8F00C41454 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,7 +66,6 @@
 		F5EE5E712994CD2D00C41454 /* SwiftUIView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView5.swift; sourceTree = "<group>"; };
 		F5EE5E732994D12800C41454 /* checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkbox.swift; sourceTree = "<group>"; };
 		F5EE5E75299FBCF700C41454 /* location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = location.swift; sourceTree = "<group>"; };
-		F5EE5E77299FBE4900C41454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F5EE5E78299FC4E000C41454 /* contentview5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentview5.swift; sourceTree = "<group>"; };
 		F5EE5E7C29A2016F00C41454 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		F5EE5E7E29A204B300C41454 /* register page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "register page.swift"; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D0354529A38EAC005EE35D /* StreamChatSwiftUI in Frameworks */,
 				590A0790299E1F2E006E9B7B /* FirebaseDatabase in Frameworks */,
 				590A0792299E1F2E006E9B7B /* FirebaseFirestore in Frameworks */,
 				590A0794299E1F2E006E9B7B /* FirebaseMessaging in Frameworks */,
@@ -118,6 +121,7 @@
 			children = (
 				590A0797299E216C006E9B7B /* Crew.entitlements */,
 				F5EE5E33298FEC8F00C41454 /* CrewApp.swift */,
+				F5D0354629A39343005EE35D /* appchat.swift */,
 				F5EE5E75299FBCF700C41454 /* location.swift */,
 				F5EE5E78299FC4E000C41454 /* contentview5.swift */,
 				F5EE5E7C29A2016F00C41454 /* login.swift */,
@@ -181,6 +185,7 @@
 				590A0791299E1F2E006E9B7B /* FirebaseFirestore */,
 				590A0793299E1F2E006E9B7B /* FirebaseMessaging */,
 				590A0795299E1F2E006E9B7B /* FirebaseStorage */,
+				F5D0354429A38EAC005EE35D /* StreamChatSwiftUI */,
 			);
 			productName = Crew;
 			productReference = F5EE5E30298FEC8F00C41454 /* Crew.app */;
@@ -212,6 +217,7 @@
 			mainGroup = F5EE5E27298FEC8F00C41454;
 			packageReferences = (
 				590A078A299E1F2E006E9B7B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F5D0354329A38EAB005EE35D /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */,
 			);
 			productRefGroup = F5EE5E31298FEC8F00C41454 /* Products */;
 			projectDirPath = "";
@@ -241,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5EE5E79299FC4E000C41454 /* contentview5.swift in Sources */,
+				F5D0354729A39343005EE35D /* appchat.swift in Sources */,
 				590A06DF29924314006E9B7B /* TabView.swift in Sources */,
 				590A06DD29924234006E9B7B /* TabBar.swift in Sources */,
 				F5EE5E76299FBCF700C41454 /* location.swift in Sources */,
@@ -390,7 +397,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Crew/Preview Content\"";
-				DEVELOPMENT_TEAM = 686H3J2SCC;
+				DEVELOPMENT_TEAM = T6KTATRLDG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Crew/Info.plist;
@@ -423,7 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Crew/Preview Content\"";
-				DEVELOPMENT_TEAM = 686H3J2SCC;
+				DEVELOPMENT_TEAM = T6KTATRLDG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Crew/Info.plist;
@@ -479,6 +486,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		F5D0354329A38EAB005EE35D /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getstream/stream-chat-swiftui";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -511,6 +526,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 590A078A299E1F2E006E9B7B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		F5D0354429A38EAC005EE35D /* StreamChatSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5D0354329A38EAB005EE35D /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */;
+			productName = StreamChatSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

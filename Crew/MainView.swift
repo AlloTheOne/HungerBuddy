@@ -16,8 +16,8 @@ struct OnBoardingStep {
     let description: String
 }
 private let onBoardingStep = [
-    OnBoardingStep(image: "ON1", title: "Place an order with people nearby.", description: "Order with nearby family, friends and other people"),
-    OnBoardingStep(image: "ON2", title: "Sharing price delivery.", description: "Share the cost of your order's delivery")
+    OnBoardingStep(image: "MAP", title: "Place an Order with People Nearby.", description: "Get Connected Easily with Nearby People for Fee Spliting" ),
+    OnBoardingStep(image: "MAP2", title: "Sharing Delivery Fees.", description: "Share the cost of your order's delivery")
     ]
 struct MainView: View {
     @EnvironmentObject var userAuth: UserAuth
