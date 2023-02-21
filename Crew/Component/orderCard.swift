@@ -9,8 +9,9 @@ import SwiftUI
 
 struct orderCard: View {
     @EnvironmentObject var userAuth: UserAuth
+    @State var showChat: Bool = false
     var body: some View {
-        NavigationView {
+      
             VStack {
                 VStack{
                     HStack{
@@ -58,14 +59,14 @@ struct orderCard: View {
                     .padding(.bottom)
                     
                     
-                    NavigationLink {
+                    Button {
 //                        if !userAuth.isLoggedin {
 //                        MainView()
 //                    } else {
 //                        mainPage()
 //                    }
-//                        
-                    
+//
+                    showChat = true
                     } label: {
                         Text("Join")
                             .bold()
@@ -94,7 +95,7 @@ struct orderCard: View {
             }
         }
     }
-}
+
 
 struct orderCard_Previews: PreviewProvider {
     static var previews: some View {

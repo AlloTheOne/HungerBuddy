@@ -45,13 +45,17 @@ class LocationDataManager : NSObject, ObservableObject, CLLocationManagerDelegat
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        // Insert code to handle location updates
-        
+        if let location = locations.last {
+            print("Lat : \(location.coordinate.latitude) \nLng : \(location.coordinate.longitude)")
+           }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("error: \(error.localizedDescription)")
     }
     
-    
+    func getUserLocation() {
+        locationManager.allowsBackgroundLocationUpdates = true
+      
+    }
 }
