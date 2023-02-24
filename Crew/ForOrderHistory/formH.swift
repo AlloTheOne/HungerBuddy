@@ -1,4 +1,4 @@
-//
+
 //  formH.swift
 //  Crew
 //
@@ -15,9 +15,10 @@ struct formH: View {
     
     var body: some View {
         NavigationView {
+            
             VStack(spacing: 0){
                 VStack {
-                   // HStack { Spacer() }
+                    // HStack { Spacer() }
                     //Spacer()
                     HStack{
                         HStack {
@@ -25,33 +26,21 @@ struct formH: View {
                             
                                 .font(.title)
                                 .bold()
-                            // Spacer()
-//                            NavigationLink("􀤏") {
-//                                TotallyNewView(blueFish: pinkFish)
-//                                    .padding(.leading, -190.0)
-////                                VStack{
-////
-////                                }
-//                            }
+                            
                             
                         }
-                        // Spacer()
+                        
                         HStack (spacing: 150){
-                            NavigationLink("􀤏L")
+                            NavigationLink("􀤏")
                             {TotallyNewView(blueFish: pinkFish)
                                     .padding([.top, .leading], -18.0)
-                                VStack{
-                                    VStack{
-                                        
-                                    }
-                                    
-                                }
+
                                 
                                 .padding(.leading, 10.0)
-                                //Divider()
+                                
                             }
                         }
-
+                        
                     }
                     .frame(height: 50)
                     .frame(width: 500)
@@ -92,18 +81,10 @@ struct formH: View {
                         .padding()
                     Spacer()
                     
-                    //                NavigationLink("􀤏") {
-                    //                    TotallyNewView(blueFish: pinkFish)
-                    //                        .padding(.leading, -190.0)
-                    //                    VStack{
-                    //
-                    //                    }
                     
-                    //  Divider()
-                    //.padding(.leading, 100.0)
                 }
                 Button {
-
+                    
                 } label: {
                     Text("Send")
                         .bold()
@@ -112,7 +93,7 @@ struct formH: View {
                         .frame(height: 40)
                         .background(Color("ouryellow"))
                         .cornerRadius(10)
-
+                    
                 }
                 
                 Spacer()
@@ -124,12 +105,12 @@ struct formH: View {
     }
     
 }
-    
-    
-    
-    struct formH_Previews: PreviewProvider {
-        static var previews: some View {
-            formH()
-        }
+
+
+
+struct formH_Previews: PreviewProvider {
+    static var previews: some View {
+        formH()
     }
+}
 

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct TabBar: View {
     var gridItems = [GridItem]()
+    @StateObject var pinkFish = Whatever(someText: "")
+
     var body: some View {
         TabView {
             
@@ -21,7 +23,15 @@ struct TabBar: View {
                 .tabItem {
                     Label("Chat", systemImage: "bubble.left")
                 }
-            OrderHistory()
+            
+           // TotallyNewView(blueFish: Whatever(someText: ""))
+            {TotallyNewView(blueFish: pinkFish)
+                    .padding([.top, .leading], -18.0)
+
+                
+                .padding(.leading, 10.0)
+                
+            }()
                 .tabItem {
                     Label("Order History", systemImage: "newspaper")
                 }

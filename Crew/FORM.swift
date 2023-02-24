@@ -10,6 +10,8 @@ import SwiftUI
 
 struct FORM: View {
     @State var cityName: String = ""
+    @StateObject var pinkFish = Whatever(someText: "")
+
     var body: some View {
         VStack(spacing: 0){
             VStack {
@@ -31,17 +33,17 @@ struct FORM: View {
        // .ignoresSafeArea()
             
          
-                TextField("", text: $cityName, prompt: Text("Restaurant Name"))
-                    .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 15)
-                          .stroke(.gray))
-                    .frame(height: 50)
-                    .padding()
-                ViewForm()
+            TextField("Restaurant Name", text: $pinkFish.someText)
                 .padding()
-           // Spacer()
-               // .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 15)
+                        .stroke(.gray))
+                .frame(height: 50)
+                .padding()
+            ViewForm()
+                .padding()
+            // Spacer()
+            // .padding()
             
             TextField("", text: $cityName, prompt: Text("Delivery Fee"))
                 .padding()
