@@ -14,17 +14,25 @@ import StreamChatSwiftUI
 @main
 struct CrewApp: App {
     
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
+//    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject var sessionServices = SessionServiceImpl()
     
     init() {
         FirebaseApp.configure()
     }
     var body: some Scene {
         WindowGroup {
-           
+            NavigationView {
+                switch sessionServices.state {
+                case .loggedIn:
+                    HomeView(restuFee: [])
+                        .environmentObject(sessionServices)
+                case .loggedOut:
+                    LoginView()
+                }
+            }
            // ContentView()
-            MainView()
+//            MainView()
             //ContentView5()
             //ChatChannelListView()
 
