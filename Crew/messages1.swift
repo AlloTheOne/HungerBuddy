@@ -23,7 +23,7 @@ struct messages1: View {
                     })
                     Spacer ()
                 }
-                Text("coffee")
+                Text("Nadine")
                     .font(.title).foregroundColor(.white)
                     .fontWeight(.bold)
                 
@@ -90,7 +90,8 @@ struct messages1: View {
                 .padding(.top)
                 
             }
-            .padding (.bottom, UIApplication.shared .windows.first?.safeAreaInsets .bottom)
+           .padding (.bottom)
+//            , UIApplication.shared UIWindowScene.windows.first?.safeAreaInsets .bottom)
             .background (Color.white)
         }
         .edgesIgnoringSafeArea(.bottom)

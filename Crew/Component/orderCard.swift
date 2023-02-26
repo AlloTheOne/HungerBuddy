@@ -68,6 +68,7 @@ struct orderCard: View {
 //
                     showChat = true
                     } label: {
+                        
                         Text("Join")
                             .bold()
                             .foregroundColor(.white)

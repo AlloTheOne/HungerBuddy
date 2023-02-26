@@ -19,23 +19,28 @@ struct TabBar: View {
                     Label("Active Orders", systemImage: "car")
                 }
             
-            mainPage()
+            ChatH()
                 .tabItem {
                     Label("Chat", systemImage: "bubble.left")
                 }
             
+            
+            
            // TotallyNewView(blueFish: Whatever(someText: ""))
-            {TotallyNewView(blueFish: pinkFish)
-                    .padding([.top, .leading], -18.0)
-
+//            {TotallyNewView(blueFish: pinkFish)
+//                    .padding([.top, .leading], -18.0)
+//
+//
+//                .padding(.leading, 10.0)
                 
-                .padding(.leading, 10.0)
-                
-            }()
+           // }()
+            OrderHistory()
                 .tabItem {
                     Label("Order History", systemImage: "newspaper")
                 }
         }
+        
+        
         .accentColor(Color("ouryellow"))
         .background(.thinMaterial)
         .onAppear {

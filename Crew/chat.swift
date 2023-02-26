@@ -17,14 +17,14 @@ struct Chat: View {
             ZStack{
                 VStack(alignment: .leading, spacing:5){
                     HStack{
-                        Text("Username")
+                        Text("Nadine")
                             .bold()
                         
                         Spacer()
                         Text("11/25/2022")
                     }
                     HStack{
-                        Text("اهلاً بك")
+                        Text("Hello")
                             .foregroundColor(.gray)
                             .lineLimit(2)
                             .frame(height:50, alignment: .top)

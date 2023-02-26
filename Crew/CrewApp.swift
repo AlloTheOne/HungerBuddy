@@ -22,7 +22,10 @@ struct CrewApp: App {
     }
     var body: some Scene {
         WindowGroup {
+           
+           // ContentView()
             MainView()
+            //ContentView5()
             //ChatChannelListView()
 
                 //.environmentObject(UserAuth())

@@ -142,10 +142,10 @@
 			isa = PBXGroup;
 			children = (
 				590A0797299E216C006E9B7B /* Crew.entitlements */,
+				F5EE5E33298FEC8F00C41454 /* CrewApp.swift */,
 				F5D0354629A39343005EE35D /* appchat.swift */,
 				F5EE5E75299FBCF700C41454 /* location.swift */,
 				F5EE5E78299FC4E000C41454 /* contentview5.swift */,
-				F5EE5E33298FEC8F00C41454 /* CrewApp.swift */,
 				F5EE5E7C29A2016F00C41454 /* login.swift */,
 				F5EE5E7E29A204B300C41454 /* register page.swift */,
 				F5EE5E35298FEC8F00C41454 /* ContentView.swift */,
@@ -446,7 +446,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Alaa.HungerBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = "dinakhaled1999-outlook.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -480,7 +480,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Alaa.HungerBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = "dinakhaled1999-outlook.com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
