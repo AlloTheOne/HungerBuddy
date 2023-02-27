@@ -114,34 +114,34 @@ struct orderCardView: View {
                 .padding(5)
             
         }
-        .onAppear {
-            print("")
-            Firestore.firestore().collection("Order")
-                .whereField("uid", isNotEqualTo: "Alaa")
-                .addSnapshotListener { querySnapshot, error in
-                    guard let documents = querySnapshot?.documents else {
-                        print("error fetching documents \(error!)")
-                        return
-                    }
-                    let RNames = documents.map { $0["RName"]! }
-                    let Dfees = documents.map { $0["Dfee"]!}
-                    let payment = documents.map { $0["payment"]! }
-                    let appName = documents.map { $0["appName"]! }
-                    let usid = documents.map { $0["uid"] }
-
-//                            print(documents)
-                    self.orders.removeAll()
-                    for i in 0..<RNames.count {
-                        orders.append(Order(id: UUID(uuidString: documents[i].documentID) ?? UUID(),
-                               RName: RNames[i] as? String ?? "failed to get r name",
-                               Dfee: Dfees[i] as? String ?? "failed to get fee price",
-                               payment: payment[i] as? String ?? "failed to get fee price",
-                                appName: appName[i] as? String ?? "failed to get fee price",
-                             usid: usid[i] as? String ?? "failed to get uid "
-                              ))
-                    }
-                }
-        }
+//        .onAppear {
+//            print("")
+//            Firestore.firestore().collection("Order")
+//                .whereField("uid", isNotEqualTo: "Alaa")
+//                .addSnapshotListener { querySnapshot, error in
+//                    guard let documents = querySnapshot?.documents else {
+//                        print("error fetching documents \(error!)")
+//                        return
+//                    }
+//                    let RNames = documents.map { $0["RName"]! }
+//                    let Dfees = documents.map { $0["Dfee"]!}
+//                    let payment = documents.map { $0["payment"]! }
+//                    let appName = documents.map { $0["appName"]! }
+//                    let usid = documents.map { $0["uid"] }
+//
+////                            print(documents)
+//                    self.orders.removeAll()
+//                    for i in 0..<RNames.count {
+//                        orders.append(Order(id: UUID(uuidString: documents[i].documentID) ?? UUID(),
+//                               RName: RNames[i] as? String ?? "failed to get r name",
+//                               Dfee: Dfees[i] as? String ?? "failed to get fee price",
+//                               payment: payment[i] as? String ?? "failed to get fee price",
+//                                appName: appName[i] as? String ?? "failed to get fee price",
+//                             usid: usid[i] as? String ?? "failed to get uid "
+//                              ))
+//                    }
+//                }
+//        }
     }
 }
 

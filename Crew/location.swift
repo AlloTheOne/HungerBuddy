@@ -45,9 +45,14 @@ class LocationDataManager : NSObject, ObservableObject, CLLocationManagerDelegat
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.last {
-            print("Lat : \(location.coordinate.latitude) \nLng : \(location.coordinate.longitude)")
-           }
+        let location = locations.last
+//            print("Lat : \(location.coordinate.latitude) \nLng : \(location.coordinate.longitude)")
+        let db = Firestore.firestore()
+        db.collection("locations").document("sharing").setData([""[self.parent.name : GeoPoint(latitude: (last?.coordinate.latitude)!, longitude: (last?.coordinate.longitude)!)]]) { (err) in
+            if err != nil {
+                print((err))
+            }
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
