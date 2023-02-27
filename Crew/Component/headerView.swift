@@ -6,21 +6,34 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestore
+import Combine
 
 struct headerView: View {
+    @EnvironmentObject var sessionService: SessionServiceImpl
+    @State var showForm = false
     var body: some View {
         VStack(spacing: 0){
             VStack {
                 HStack { Spacer() }
                 Spacer()
                 HStack {
-                    Text("Hello Abeer")
+                    Text("Hello \(sessionService.userDetails?.name ?? " ")")
                         .font(.title)
                         .bold()
                     Spacer()
-                    Text("+")
-                        .font(.title)
-                        .bold()
+                    Button {
+                        showForm = true
+                    } label: {
+                        Text("+")
+                            .font(.title)
+                            .bold()
+                    }
+                    .fullScreenCover(isPresented: $showForm) {
+                        FORM()
+                    }
+                    
                 }
             }
             .frame(height: 80)

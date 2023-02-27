@@ -14,7 +14,7 @@ struct TabBar: View {
     var body: some View {
         TabView {
             
-            mainPage()
+            mainPage(orders: [])
                 .tabItem {
                     Label("Active Orders", systemImage: "car")
                 }

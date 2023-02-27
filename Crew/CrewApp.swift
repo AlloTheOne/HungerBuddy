@@ -25,7 +25,8 @@ struct CrewApp: App {
             NavigationView {
                 switch sessionServices.state {
                 case .loggedIn:
-                    HomeView(restuFee: [])
+//                    HomeView(restuFee: [])
+                    TabBar()
                         .environmentObject(sessionServices)
                 case .loggedOut:
                     LoginView()

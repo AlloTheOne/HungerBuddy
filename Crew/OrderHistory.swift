@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OrderHistory: View {
+    @EnvironmentObject var sessionService: SessionServiceImpl
     var body: some View {
         
         VStack {
@@ -19,8 +20,14 @@ struct OrderHistory: View {
                     
                         .font(.title)
                         .bold()
-                    //Spacer()
-                    
+                    Spacer()
+                    Button {
+                        sessionService.logout()
+                    } label: {
+                        Text("Logout")
+                            .foregroundColor(.red)
+                    }
+
                 }
             }
             .frame(height: 50)

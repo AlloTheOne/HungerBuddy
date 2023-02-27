@@ -11,4 +11,5 @@ struct SessionUserDetails {
 //    let uid = UUID()
     
     let name: String
+    let usid: String
 }

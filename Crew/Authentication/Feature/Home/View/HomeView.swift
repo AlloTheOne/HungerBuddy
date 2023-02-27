@@ -8,7 +8,8 @@
 import SwiftUI
 import Firebase
 import FirebaseFirestore
-
+import Combine
+import FirebaseAuth
 
 struct orders: Identifiable {
     var id = UUID()
@@ -34,11 +35,12 @@ struct HomeView: View {
     
     @State var showSheet = false
     @State var showActionSheet = false
-    
+//    let usid: SessionService = sessionService.userDetails?.usid as! self.sessionService
     var body: some View {
         VStack(alignment: .leading, spacing: 16.0) {
             VStack(alignment: .leading, spacing: 16.0) {
                 Text(" Name: \(sessionService.userDetails?.name ?? "N/A")")
+                Text("UserName: \(sessionService.userDetails?.usid ?? "N/A")")
             }
             VStack {
                 TextField("Restaurant Name", text: $restaurantName)
@@ -133,7 +135,7 @@ struct HomeView: View {
                                 }
                                 .padding()
                                 .actionSheet(isPresented: self.$showActionSheet) {
-                                    ActionSheet(title: Text("Delete"), message: Text("Sure Bruh?"), buttons: [.default( Text("Yes B!"), action: {
+                                    ActionSheet(title: Text("Delete"), message: Text("Are you sure you want to delete ?"), buttons: [.default( Text("Yes"), action: {
                                         
                                         Firestore.firestore().collection("order").document("\(self.orderID)")
                                             .delete() { err in
@@ -159,12 +161,24 @@ struct HomeView: View {
                         }
                     
                 }
-            .onAppear {
+            .onAppear {//problem here !!
 //                if let usid =  sessionService.userDetails?.name {
 //                    print(usid)
 //                    print("here")
 //                    print("\(usid)")
-                    Firestore.firestore().collection("order").whereField("uid", isEqualTo: "test5")
+//                @EnvironmentObject var sessionService: SessionServiceImpl
+                
+//                if ((try? sessionService.userDetails?.name != nil) != nil) {
+//                    print(usid)
+//                    print("here")
+//                    print("\(sessionService.userDetails?.name)")
+//                Auth().auth().
+                if Auth.auth().currentUser != nil {
+                  // ...
+                    print("here")
+                    Firestore.firestore().collection("order")
+//                        .whereField("uid", isEqualTo: "Alaa")
+//                    .whereField("uid", isEqualTo: sessionService.userDetails?.name)
                     
                     //                print("\(usid)")
                         .addSnapshotListener { querySnapshot, error in
@@ -174,20 +188,21 @@ struct HomeView: View {
                             }
                             let names = documents.map { $0["name"]! }
                             let fees = documents.map { $0["fee"]!}
-                            let usid = documents.map { $0["uid"]! }
+                            let usid = documents.map { $0["uid"] }
                             print(names)
                             print(fees)
-                            //                        print(uid)
+                            print(usid)
+//                            print(documents)
                             self.restuFee.removeAll()
                             for i in 0..<names.count {
                                 restuFee.append(orders(id: UUID(uuidString: documents[i].documentID) ?? UUID(),
-                                                       name: names[i] as? String ?? "failed to get r name",
-                                                       fee: fees[i] as? String ?? "failed to get fee price",
-                                                     usid: usid[i] as? String ?? "failed to get uid "
-                                                      ))
+                                       name: names[i] as? String ?? "failed to get r name",
+                                       fee: fees[i] as? String ?? "failed to get fee price",
+                                     usid: usid[i] as? String ?? "failed to get uid "
+                                      ))
                             }
                         }
-//                }
+                }
             }
             
             ButtonView(title: "Logout") {

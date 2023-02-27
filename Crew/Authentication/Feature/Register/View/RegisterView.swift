@@ -20,6 +20,8 @@ struct RegisterView: View {
                     
                     InputTextFieldView(text: $vm.userDetails.name, placeholder: "Name", keyboardType: .namePhonePad, sfSymbol: nil)
                     
+                    InputTextFieldView(text: $vm.userDetails.usid, placeholder: "Username", keyboardType: .namePhonePad, sfSymbol: nil)
+                    
                     
                     InputTextFieldView(text: $vm.userDetails.email, placeholder: "Email", keyboardType: .emailAddress, sfSymbol: "envelope")
                     

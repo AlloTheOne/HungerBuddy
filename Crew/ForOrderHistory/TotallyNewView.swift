@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TotallyNewView: View {
     @ObservedObject var blueFish: Whatever
-    
+    @EnvironmentObject var sessionService: SessionServiceImpl
     var body: some View {
         VStack{
             VStack {
@@ -22,8 +22,15 @@ struct TotallyNewView: View {
                     
                         .font(.title)
                         .bold()
-                    //Spacer()
                     
+                    Spacer()
+                    Button {
+                        sessionService.logout()
+                    } label: {
+                        Text("Logout")
+                            .foregroundColor(.red)
+                    }
+
                 }
             }
             
