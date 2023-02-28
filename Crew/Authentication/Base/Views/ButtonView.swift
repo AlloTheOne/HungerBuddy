@@ -22,7 +22,7 @@ struct ButtonView: View {
     
     
     internal init(title: String,
-                  background: Color = .blue,
+                  background: Color = Color("ouryellow"),
                   foreground: Color = .white,
                   border: Color = .clear,
                   handler: @escaping ButtonView.actionHandled) {

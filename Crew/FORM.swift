@@ -33,6 +33,7 @@ struct FORM: View {
             VStack(alignment: .leading) {
                         Text("What App Are You Ordering From?")
                             .font(.headline)
+                            .foregroundColor(Color(.black))
                             .padding(.leading)
                 CustomInputView(placeholder: "App Name", text: $appName)
                     }
@@ -47,13 +48,16 @@ struct FORM: View {
             VStack(alignment: .leading){
                 Text("How Can People Pay You?")
                     .font(.headline)
+                    .foregroundColor(Color(.black))
                     .padding(.leading)
+                
                 CustomInputView(placeholder: "Payment Method", text: $payment)
                 
                 HStack {
                     CheckBoxView(checked: $checked)
                     
                     Text("Save For Next Order")
+                        .foregroundColor(Color(.black))
                 }
                 
                 .padding(.leading)

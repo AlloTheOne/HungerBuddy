@@ -32,9 +32,11 @@ struct OrderHistory: View {
             }
             .frame(height: 50)
             .foregroundColor(.white)
+            .padding(.horizontal, 20)
             .padding(.vertical)
             .background(Color("darkgrey"))
-            .offset(x: 0, y: -100)
+            .offset(x: 0, y: -120)
+            .ignoresSafeArea()
             VStack{
                 HStack{
                     Text("McDonald's")

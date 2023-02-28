@@ -27,6 +27,7 @@ struct LoginView: View {
                     showForgotPassword.toggle()
                 }, label: {
                     Text("Forgot Password?")
+                        .foregroundColor(Color(.black))
                 })
                 .font(.system(size: 16, weight: .bold))
                 .sheet(isPresented: $showForgotPassword) {
@@ -39,7 +40,7 @@ struct LoginView: View {
                     vm.login()
                 }
                 
-                ButtonView(title: "Register", background: .clear, foreground: .blue, border: .blue) {
+                ButtonView(title: "Register", background: .clear, foreground: Color("ouryellow"), border: Color("ouryellow")) {
                     showRegistration.toggle()
                 }
                 .sheet(isPresented: $showRegistration) {

@@ -6,15 +6,23 @@
 //
 
 import SwiftUI
+import Firebase
+import CoreLocation
+import MapKit
 
 struct ContentView5: View {
     @StateObject var locationDataManager = LocationDataManager()
+    @EnvironmentObject var sessionService: SessionServiceImpl
+//    @ObservedObject var obs = observer()
     var body: some View {
         VStack {
+            
+            // mapView()
             switch locationDataManager.locationManager.authorizationStatus {
             case .authorizedWhenInUse:  // Location services are available.
                 // Insert code here of what should happen when Location services are authorized
-                Text("Your current location is:")
+                Text("Your current location is: \(sessionService.userDetails?.name ?? " ")")
+//                Text("\(self.obs.data["data"])")
                 Text("Latitude: \(locationDataManager.locationManager.location?.coordinate.latitude.description ?? "Error loading")")
                 Text("Longitude: \(locationDataManager.locationManager.location?.coordinate.longitude.description ?? "Error loading")")
                 
@@ -35,3 +43,5 @@ struct contentview5_Previews: PreviewProvider {
         ContentView5()
     }
 }
+
+

@@ -45,7 +45,7 @@ struct myOrderCardView: View {
                                 .font(.caption)
                             Spacer()
                             Image(systemName: "dollarsign")
-                            Text("6 per person")
+                            Text("\(thisOrder.Dfee) per person")
                                 .font(.caption)
                             
                         }
@@ -56,7 +56,7 @@ struct myOrderCardView: View {
                                 .font(.caption)
                             Spacer()
                             Image(systemName: "person.3.sequence")
-                            Text("3-4")
+                            Text("0-4")
                                 .font(.caption)
                             
                         }
@@ -66,8 +66,8 @@ struct myOrderCardView: View {
                             Text(thisOrder.appName)
                                 .font(.caption)
                             Spacer()
-                            Button {
-                                
+                            NavigationLink {
+                                messages1(RName: thisOrder.RName)
                             } label: {
                                 Text("Chat")
                                     .bold()
@@ -76,8 +76,9 @@ struct myOrderCardView: View {
                                     .frame(height: 40)
                                     .background(Color("ouryellow"))
                                     .cornerRadius(10)
-                                
+//                                    .navigationBarBackButtonHidden(true)
                             }
+//                            .navigationBarBackButtonHidden(true)
                             
                         }
                                        
@@ -90,7 +91,8 @@ struct myOrderCardView: View {
                    
             }
                 .padding(30)
-                .frame(width: 360, height: 150)
+                .frame(height: 160)
+                .frame(maxWidth: .infinity)
                 .background(.white)
                 .cornerRadius(10)
                 .shadow(color: Color("shadow"), radius: 25, x: 0, y: 0)
@@ -99,9 +101,9 @@ struct myOrderCardView: View {
         }
        
         .onAppear {
-            print("")
+            
             Firestore.firestore().collection("Order")
-                .whereField("uid", isEqualTo: "afnan")
+                .whereField("uid", isEqualTo: "AlaaHamad")
                 .addSnapshotListener { querySnapshot, error in
                     guard let documents = querySnapshot?.documents else {
                         print("error fetching documents \(error!)")
@@ -128,6 +130,7 @@ struct myOrderCardView: View {
         }
             
     }
+    
 }
 
 struct myOrderCardView_Previews: PreviewProvider {

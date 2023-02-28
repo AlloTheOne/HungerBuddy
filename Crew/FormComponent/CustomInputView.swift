@@ -13,6 +13,7 @@ struct CustomInputView: View {
     
     var body: some View {
         TextField(placeholder, text: $text)
+            .foregroundColor(Color(.black))
             .padding()
             .background(
                 RoundedRectangle(cornerRadius: 15)

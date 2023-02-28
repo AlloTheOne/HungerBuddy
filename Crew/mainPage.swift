@@ -13,6 +13,7 @@ import FirebaseFirestore
 struct mainPage: View {
     @State private var isPresentedFullScreenCover = false
     @State var orders: [Order]
+    @StateObject var locationDataManager = LocationDataManager()
     
     //    @State var orderID = ""
     //
@@ -39,7 +40,7 @@ struct mainPage: View {
                         
                         
                     } else {
-                        emptyOrderCard
+//                        emptyOrderCard
                     }
                     
                     Spacer()
@@ -76,7 +77,7 @@ struct mainPage: View {
             }.onAppear {
                 print("")
                 Firestore.firestore().collection("Order")
-                    .whereField("uid", isNotEqualTo: "afnan")
+                    .whereField("uid", isNotEqualTo: "AlaaHamad")
                     .addSnapshotListener { querySnapshot, error in
                         guard let documents = querySnapshot?.documents else {
                             print("error fetching documents \(error!)")

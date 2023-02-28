@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct messages1: View {
+    @State var RName: String = ""
     @State var message = ""
     @StateObject var allMessages = Messages()
     var body: some View{
@@ -16,14 +17,14 @@ struct messages1: View {
                 
                 HStack{
                     
-                    Button(action: {}, label: {
-                        Image (systemName: "chevron.left")
-                            .font (.system(size: 24))
-                            .foregroundColor(.white)
-                    })
-                    Spacer ()
+//                    Button(action: {}, label: {
+//                        Image (systemName: "chevron.left")
+//                            .font (.system(size: 24))
+//                            .foregroundColor(.white)
+//                    })
+//                    Spacer ()
                 }
-                Text("Nadine")
+                Text(RName)
                     .font(.title).foregroundColor(.white)
                     .fontWeight(.bold)
                 
@@ -32,7 +33,7 @@ struct messages1: View {
             
             
             
-            .padding(.all)
+//            .padding(.all)
             
             VStack{
                 ScrollView(.vertical, showsIndicators: false, content: {
@@ -88,14 +89,15 @@ struct messages1: View {
                     }
                 }
                 .padding(.top)
-                
+//                .padding(.bottom, 30)
             }
            .padding (.bottom)
 //            , UIApplication.shared UIWindowScene.windows.first?.safeAreaInsets .bottom)
             .background (Color.white)
         }
-        .edgesIgnoringSafeArea(.bottom)
+//        .edgesIgnoringSafeArea(.bottom)
         .background (Color("Color") .edgesIgnoringSafeArea(.top))
+//        .navigationBarBackButtonHidden(true)
         //        .fullScreenCover(isPresented:self.$imagePicker, onDismiss:{
         
         //            if self.imgData.count != 0{

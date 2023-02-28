@@ -48,6 +48,7 @@
 		59C81CE729AC0BD8004FF4EA /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81CE629AC0BD8004FF4EA /* Order.swift */; };
 		59C81CEA29AC278D004FF4EA /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81CE929AC278D004FF4EA /* CustomInputView.swift */; };
 		59C81CEC29AC2A98004FF4EA /* FormHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81CEB29AC2A98004FF4EA /* FormHeaderView.swift */; };
+		59C81CEE29AD8C4D004FF4EA /* OrderLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C81CED29AD8C4D004FF4EA /* OrderLocation.swift */; };
 		A4FF671829A9113E009B58A2 /* ChatH.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF671729A9113E009B58A2 /* ChatH.swift */; };
 		A4FF671A29A911A4009B58A2 /* chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF671929A911A4009B58A2 /* chat.swift */; };
 		A4FF671C29A9121B009B58A2 /* messages1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF671B29A9121B009B58A2 /* messages1.swift */; };
@@ -102,6 +103,7 @@
 		59C81CE629AC0BD8004FF4EA /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		59C81CE929AC278D004FF4EA /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		59C81CEB29AC2A98004FF4EA /* FormHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHeaderView.swift; sourceTree = "<group>"; };
+		59C81CED29AD8C4D004FF4EA /* OrderLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderLocation.swift; sourceTree = "<group>"; };
 		A4FF671729A9113E009B58A2 /* ChatH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatH.swift; sourceTree = "<group>"; };
 		A4FF671929A911A4009B58A2 /* chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat.swift; sourceTree = "<group>"; };
 		A4FF671B29A9121B009B58A2 /* messages1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messages1.swift; sourceTree = "<group>"; };
@@ -409,6 +411,7 @@
 				59C81CA229ABAF74004FF4EA /* Authentication */,
 				F5D0354629A39343005EE35D /* appchat.swift */,
 				F5EE5E75299FBCF700C41454 /* location.swift */,
+				59C81CED29AD8C4D004FF4EA /* OrderLocation.swift */,
 				F5EE5E78299FC4E000C41454 /* contentview5.swift */,
 				F5EE5E7C29A2016F00C41454 /* login.swift */,
 				F5EE5E7E29A204B300C41454 /* register page.swift */,
@@ -556,6 +559,7 @@
 				F5EE5E4D299105CD00C41454 /* MainView.swift in Sources */,
 				A4FF671829A9113E009B58A2 /* ChatH.swift in Sources */,
 				59C81CB329ABB13E004FF4EA /* InputPasswordView.swift in Sources */,
+				59C81CEE29AD8C4D004FF4EA /* OrderLocation.swift in Sources */,
 				59C81CB529ABB16E004FF4EA /* ButtonView.swift in Sources */,
 				59C81CCD29ABB340004FF4EA /* RegisterView.swift in Sources */,
 				59C81CEA29AC278D004FF4EA /* CustomInputView.swift in Sources */,
@@ -714,6 +718,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Crew/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs to access your location data to tell you your location ";
+				INFOPLIST_KEY_NSLocationUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs to access your location data to tell you your location ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -748,6 +753,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Crew/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "App needs to access your location data to tell you your location ";
+				INFOPLIST_KEY_NSLocationUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs to access your location data to tell you your location ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

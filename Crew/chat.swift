@@ -8,23 +8,26 @@
 import SwiftUI
 
 struct Chat: View {
+    @State var name = ""
+    @State var date = ""
+    @State var text = ""
     var body: some View {
         HStack(spacing: 20){
-            Image("chat1")
-                .resizable()
-                .frame(width:60,height: 60)
-                .clipShape(Circle())
+//            Image("chat1")
+//                .resizable()
+//                .frame(width:60,height: 60)
+//                .clipShape(Circle())
             ZStack{
                 VStack(alignment: .leading, spacing:5){
                     HStack{
-                        Text("Nadine")
+                        Text(name)
                             .bold()
                         
                         Spacer()
-                        Text("11/25/2022")
+                        Text(date)
                     }
                     HStack{
-                        Text("Hello")
+                        Text(text)
                             .foregroundColor(.gray)
                             .lineLimit(2)
                             .frame(height:50, alignment: .top)
